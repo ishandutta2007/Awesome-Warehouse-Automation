@@ -39,45 +39,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-- **[Locus Robotics](https://locusrobotics.com/)**  
-  Autonomous mobile robot platform for warehouse fulfillment, picking, replenishment, and material movement. Provides robotic fleets and orchestration software for high-volume fulfillment environments.
-
-
-- **[6 River Systems](https://www.6river.com/)**  
-  Collaborative warehouse robotics platform centered around autonomous mobile robots and fulfillment workflows. 6 River Systems was acquired by Shopify.
-
-
-- **[GreyOrange](https://www.greyorange.com/)**  
-  AI-powered warehouse automation platform providing robotic fulfillment systems, warehouse orchestration, goods-to-person automation, and intelligent inventory movement.
-
-
-- **[Fetch Robotics](https://fetchrobotics.com/)**  
-  Autonomous mobile robotics platform focused on warehouse material transport, pallet movement, picking, and logistics automation. Fetch Robotics was acquired by Zebra Technologies.
-
-
-- **[AutoStore](https://www.autostoresystem.com/)**  
-  Cube-based automated storage and retrieval system using robots operating on a dense storage grid to retrieve bins and deliver them to workstations.
-
-
-- **[Exotec](https://www.exotec.com/)**  
-  Goods-to-person warehouse automation company known for its Skypod robotic storage and retrieval system using autonomous robots to move through storage racks.
-
-
-- **[Geek+](https://www.geekplus.com/)**  
-  Autonomous mobile robotics provider offering solutions for picking, sorting, moving, replenishment, and warehouse fulfillment.
-
-
-- **[Swisslog](https://www.swisslog.com/)**  
-  Warehouse automation provider offering automated storage and retrieval, robotic systems, conveyors, warehouse-control technologies, and software.
-
-
-- **[Dematic](https://www.dematic.com/)**  
-  Global warehouse automation provider covering automated material handling, storage, sortation, conveyors, robotics, and warehouse execution software.
-
-
-- **[Körber Supply Chain](https://www.koerber-supplychain.com/)**  
-  Supply-chain technology platform providing warehouse management, warehouse control, automation, robotics integration, and material-handling solutions.
+| Platform | Description / Core Capability | Starting Pricing | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[Locus Robotics](https://locusrobotics.com/)** | Autonomous mobile robot (AMR) platform for collaborative fulfillment, picking, and orchestration. | **RaaS:** ~$2,000 – $3,500/month per robot (base unit purchase option from ~$35,000/robot) | **30-day on-site pilot program** (limited to a designated warehouse zone & 2–4 test robots; no perpetual free tier) |
+| **[6 River Systems](https://www.6river.com/)** | Collaborative AMR fulfillment platform ("Chuck") featuring directed workflows and cloud fleet orchestration. | **RaaS:** ~$2,500 – $4,500/month per robot (capital purchase from ~$30,000/AMR + software subscription) | **30-day structured pilot deployment** (limited to 2–4 Chuck AMRs in a single fulfillment zone; no perpetual free tier) |
+| **[GreyOrange](https://www.greyorange.com/)** | AI-driven warehouse orchestration platform (GreyMatter) and goods-to-person Ranger AMR systems. | **RaaS:** ~$3,000/month per robot; GreyMatter cloud starting tier from ~$25,000/year (GreyMatter Foundry simulation from ~$5,000/project) | **30-day simulation pilot** via GreyMatter Foundry digital twin (limited to 1 facility layout; no perpetual free tier) |
+| **[Fetch Robotics](https://fetchrobotics.com/)** | Autonomous industrial mobile robots for material transport and cart handling via FetchCore cloud. | **RaaS:** ~$2,000 – $3,000/month per robot (capital purchase from ~$25,000/AMR + FetchCore SaaS from ~$150/robot/month) | **30-day proof-of-concept trial** (limited to 1–2 robots on a single floor loop; no perpetual free tier) |
+| **[AutoStore](https://www.autostoresystem.com/)** | High-density cube-based automated storage and retrieval system (AS/RS) with picking robot fleet. | **Pay-Per-Pick / RaaS:** ~$0.05 – $0.15/bin pick + 20–40% initial grid setup (turnkey entry systems from ~$1,000,000) | **1-day guided live test session** & custom StoreX digital simulation report (no perpetual free tier) |
+| **[Exotec](https://www.exotec.com/)** | Goods-to-person Skypod 3D climbing AMR storage and retrieval system for high-velocity order fulfillment. | **Modular Turnkey:** From ~$1,500,000 for Skypod Compact (peak-season RaaS robot additions from ~$3,500/robot/month) | **1-day scheduled demonstration & digital twin analysis** at regional Exotec Demo Centers (no perpetual free tier) |
+| **[Geek+](https://www.geekplus.com/)** | Autonomous mobile robots for goods-to-person picking, smart sorting, RoboShuttle AS/RS, and material handling. | **RaaS:** ~$2,200 – $4,000/month per robot (capital purchase from ~$20,000 – $35,000/unit + RMS software fees) | **30-day pilot testing program** (limited to a designated test cell with 2–5 AMRs; no perpetual free tier) |
+| **[Swisslog](https://swisslog.com/)** | Automated warehouse logistics, AS/RS integration, and SynQ WMS/WCS warehouse control software. | **SynQ SaaS:** From ~$4,000 – $8,000/month (turnkey hardware/software integration from ~$150,000+) | **14-day guided sandbox access** during solution discovery and architecture validation (no perpetual free tier) |
+| **[Dematic](https://dematic.com/)** | Enterprise automated material handling, automated guided vehicles (AGVs/AMRs), conveyors, and Dematic iQ WES/WMS. | **Dematic iQ / RaaS:** From ~$3,500/month per robot / WES software tier (turnkey installations from ~$250,000+) | **30-day digital-twin emulation study** (limited to 1 facility workflow simulation; no perpetual free tier) |
+| **[Körber Supply Chain](https://koerber-supplychain.com/)** | Unified supply-chain software suite (Körber One / K.Motion WMS/WCS/WES) and robotics orchestration. | **Cloud WMS SaaS:** From ~$1,500 – $3,000/month (entry tier covering 10–25 named users at ~$120–$180/user/month) | **14-day staging environment sandbox** (limited to preloaded sample warehouse datasets; no perpetual free tier) |
 
 
 ### Additional Major Warehouse Automation Platforms
