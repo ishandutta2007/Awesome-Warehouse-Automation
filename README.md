@@ -72,7 +72,7 @@ Curated open-source projects covering robot operating systems, navigation, manip
 
 *Sorted in descending order by GitHub Stars.*
 
-| Project | Stars | Primary Domain | Description |
+| Project | Github_Stars | Primary Domain | Description |
 | :--- | :---: | :--- | :--- |
 | **[OpenCV](https://github.com/opencv/opencv)** | [![GitHub stars](https://img.shields.io/github/stars/opencv/opencv?style=social&color=white)](https://github.com/opencv/opencv/stargazers) | 👁️ Computer Vision | Real-time computer vision library for barcode detection, item localization, and visual camera perception. |
 | **[Segment Anything](https://github.com/facebookresearch/segment-anything)** | [![GitHub stars](https://img.shields.io/github/stars/facebookresearch/segment-anything?style=social&color=white)](https://github.com/facebookresearch/segment-anything/stargazers) | 🎯 AI Segmentation | Foundation model for zero-shot object segmentation in robotic picking and warehouse item inspection. |
