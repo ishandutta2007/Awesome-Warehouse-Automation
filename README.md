@@ -1,7 +1,7 @@
 # Awesome-Warehouse-Automation
 
 Markdown
-# Top Warehouse Automation Ecosystem
+## Top Warehouse Automation Ecosystem
 
 
 **Curated List of SaaS/Hosted Platforms & Open-Source GitHub Projects**  
