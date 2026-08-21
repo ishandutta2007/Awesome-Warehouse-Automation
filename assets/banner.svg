@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#1b263b"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5d4"/>
+      <stop offset="50%" stop-color="#7b2cbf"/>
+      <stop offset="100%" stop-color="#ff007f"/>
+    </linearGradient>
+
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f5d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00f5d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f314d" stroke-width="1" stroke-opacity="0.4"/>
+      <circle cx="40" cy="40" r="1.5" fill="#00f5d4" fill-opacity="0.3"/>
+    </pattern>
+
+    <style>
+      .title {
+        font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+        font-size: 54px;
+        font-weight: 900;
+        letter-spacing: -1px;
+        fill: #ffffff;
+      }
+      .subtitle {
+        font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        fill: #94a3b8;
+      }
+      .tag {
+        font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        fill: #00f5d4;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+      @keyframes pulseNode {
+        0%, 100% { r: 5px; opacity: 0.4; }
+        50% { r: 9px; opacity: 1; filter: drop-shadow(0 0 8px #00f5d4); }
+      }
+      @keyframes scanMove {
+        0% { transform: translateY(0px); opacity: 0.2; }
+        50% { transform: translateY(220px); opacity: 0.9; }
+        100% { transform: translateY(0px); opacity: 0.2; }
+      }
+      @keyframes dashAnim {
+        to { stroke-dashoffset: -100; }
+      }
+      @keyframes amrMove {
+        0% { transform: translate(0px, 0px); }
+        25% { transform: translate(120px, 0px); }
+        50% { transform: translate(120px, 80px); }
+        75% { transform: translate(0px, 80px); }
+        100% { transform: translate(0px, 0px); }
+      }
+      .pulse-1 { animation: pulseNode 3s infinite ease-in-out; }
+      .pulse-2 { animation: pulseNode 2.5s infinite ease-in-out 1s; }
+      .pulse-3 { animation: pulseNode 3.2s infinite ease-in-out 0.5s; }
+      .scan-line { animation: scanMove 6s infinite ease-in-out; }
+      .agv-path { stroke-dasharray: 8 6; animation: dashAnim 15s linear infinite; }
+      .amr-robot { animation: amrMove 12s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Perspective Isometric Grid Floor -->
+  <g opacity="0.7">
+    <rect width="1200" height="400" fill="url(#grid)"/>
+  </g>
+
+  <!-- Decorative Circuit & AMR Path Lines -->
+  <g fill="none" stroke-linecap="round">
+    <path class="agv-path" d="M 100 320 L 450 320 L 550 220 L 800 220 L 950 340 L 1120 340" stroke="#00f5d4" stroke-width="2" opacity="0.6"/>
+    <path class="agv-path" d="M 80 80 L 300 80 L 400 180 L 700 180 L 850 60 L 1100 60" stroke="#7b2cbf" stroke-width="2" opacity="0.5"/>
+    <path d="M 750 300 L 1050 300 L 1150 200" stroke="#ff007f" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+  </g>
+
+  <!-- Automated Warehouse Storage Racks Visualization (Right Side) -->
+  <g transform="translate(820, 80)" opacity="0.85">
+    <rect x="0" y="0" width="300" height="240" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+    <g fill="#1e293b" stroke="#334155" stroke-width="1.5">
+      <rect x="20" y="20" width="50" height="35" rx="4" fill="#132a4a"/>
+      <rect x="85" y="20" width="50" height="35" rx="4" fill="#00f5d4" fill-opacity="0.2"/>
+      <rect x="150" y="20" width="50" height="35" rx="4" fill="#132a4a"/>
+      <rect x="215" y="20" width="65" height="35" rx="4" fill="#7b2cbf" fill-opacity="0.3"/>
+      <rect x="20" y="70" width="50" height="35" rx="4" fill="#ff007f" fill-opacity="0.2"/>
+      <rect x="85" y="70" width="50" height="35" rx="4" fill="#132a4a"/>
+      <rect x="150" y="70" width="50" height="35" rx="4" fill="#00f5d4" fill-opacity="0.3"/>
+      <rect x="215" y="70" width="65" height="35" rx="4" fill="#132a4a"/>
+      <rect x="20" y="120" width="50" height="35" rx="4" fill="#132a4a"/>
+      <rect x="85" y="120" width="50" height="35" rx="4" fill="#7b2cbf" fill-opacity="0.25"/>
+      <rect x="150" y="120" width="50" height="35" rx="4" fill="#132a4a"/>
+      <rect x="215" y="120" width="65" height="35" rx="4" fill="#00f5d4" fill-opacity="0.2"/>
+      <rect x="20" y="175" width="115" height="45" rx="6" fill="#1e293b" stroke="#00f5d4" stroke-opacity="0.4"/>
+      <rect x="150" y="175" width="130" height="45" rx="6" fill="#1e293b" stroke="#ff007f" stroke-opacity="0.4"/>
+    </g>
+
+    <!-- Scanning Laser Line over AS/RS Racks -->
+    <g class="scan-line">
+      <line x1="10" y1="10" x2="290" y2="10" stroke="#00f5d4" stroke-width="2.5" filter="url(#glow)"/>
+      <rect x="10" y="10" width="280" height="15" fill="url(#laserGrad)"/>
+    </g>
+
+    <!-- Animated AMR Pod moving in warehouse aisle -->
+    <g class="amr-robot">
+      <rect x="25" y="182" width="40" height="30" rx="6" fill="#00f5d4" fill-opacity="0.9" filter="url(#glow)"/>
+      <circle cx="45" cy="197" r="4" fill="#0a0f1d"/>
+      <line x1="28" y1="208" x2="62" y2="208" stroke="#ffffff" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Pulsing Network Telemetry Nodes -->
+  <circle class="pulse-1" cx="450" cy="320" r="7" fill="#00f5d4"/>
+  <circle class="pulse-2" cx="550" cy="220" r="7" fill="#7b2cbf"/>
+  <circle class="pulse-3" cx="800" cy="220" r="7" fill="#ff007f"/>
+  <circle class="pulse-1" cx="400" cy="180" r="6" fill="#00f5d4"/>
+
+  <!-- Left Header Content & Branding -->
+  <g transform="translate(80, 0)">
+    <g transform="translate(0, 75)">
+      <rect width="190" height="30" rx="15" fill="#1e293b" stroke="#00f5d4" stroke-width="1.5" stroke-opacity="0.6"/>
+      <circle cx="15" cy="15" r="4" fill="#00f5d4" filter="url(#glow)"/>
+      <text x="30" y="20" class="tag">AMRs • AS/RS • WES • AI</text>
+    </g>
+
+    <g transform="translate(0, 160)">
+      <text class="title">Awesome Warehouse</text>
+      <text y="60" class="title" fill="url(#accentGrad)">Automation 🤖📦</text>
+    </g>
+
+    <text x="0" y="275" class="subtitle">Robotics, Fleet Orchestration &amp; Smart Intralogistics</text>
+
+    <g transform="translate(0, 315)">
+      <rect width="105" height="28" rx="6" fill="#132a4a" stroke="#00f5d4" stroke-width="1"/>
+      <text x="52" y="18" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#00f5d4">🏢 Top SaaS</text>
+
+      <rect x="120" width="135" height="28" rx="6" fill="#24143a" stroke="#7b2cbf" stroke-width="1"/>
+      <text x="187" y="18" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#c084fc">⭐ Open-Source</text>
+
+      <rect x="270" width="155" height="28" rx="6" fill="#301528" stroke="#ff007f" stroke-width="1"/>
+      <text x="347" y="18" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#f472b6">⚡ ROS 2 &amp; Open-RMF</text>
+    </g>
+  </g>
+</svg>
